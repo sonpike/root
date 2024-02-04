@@ -10,15 +10,6 @@ services:
     networks:
       - sonpike
 
-  tor:
-    build:
-      context: .docker/tor
-      dockerfile: Dockerfile
-    depends_on:
-      - nginx
-    networks:
-      - sonpike
-
 networks:
   sonpike:
     external: false
